@@ -1,0 +1,128 @@
+body {
+    background-color: #f5f5f5 !important;
+}
+.profile-container {
+    background-color: white;
+    padding: 23px;
+    border-radius: 23px;
+    max-width: 50%;
+    width: 100%;
+    margin: 23px auto;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+
+}
+.profile-img {
+    display: flex;
+    flex-direction: column;
+}
+.profile-img>img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 23px;
+}
+button {
+    padding: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #fa654d;
+    transition: 0.1s;
+}
+button:hover {
+    background-color: #bf4a38;
+}
+.profile-detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+}
+.detail {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4.5fr 0.5fr 4.5fr;
+    padding: 13px;
+    background-color: #f5f5f5;
+    align-items: center;
+    border-radius: 8px;
+}
+.detail>p {
+    margin: 0;
+}
+input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.1s;
+    width: 100%;
+}
+input:focus {
+    background-color: #fff2d8;
+}
+select {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+select:focus {
+    background-color: #fff2d8;
+}
+@media screen and (max-width: 1415px) {
+    .profile-container {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 1415px) {
+    .profile-container {
+        max-width: 95%;
+    }
+}
+@media screen and (max-width: 741px) {
+    .profile-container {
+        max-width: 100%;
+    }
+    .profile-img>img {
+        width: 200px;
+        height: 200px;
+    }
+    .detail {
+        padding: 5px;
+    }
+    .profile-img>input {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 537px) {
+    .profile-img>img {
+        width: 150px;
+        height: 150px;
+    }
+    .detail {
+        padding: 3px;
+    }
+    .profile-img>input {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 468px) {
+    .profile-img>img {
+        width: 100px;
+        height: 100px;
+    }
+    .detail {
+        padding: 3px;
+    }
+    .profile-img>input {
+        width: 100px;
+    }
+    .profile-detail {
+        width: 200px;
+    }
+}

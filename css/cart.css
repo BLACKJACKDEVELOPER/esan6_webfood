@@ -1,0 +1,125 @@
+body {
+    background-color: #f5f5f5 !important;
+}
+.cart-container {
+    background-color: white;
+    padding: 23px;
+    border-radius: 23px 23px 0 0;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 23px;
+}
+.amount {
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+    padding: 3px;
+    border-radius: 8px;
+    width: 100%;
+}
+.payment-container {
+    max-width: 80%;
+    margin: 0 auto;
+    border:  1px solid #fa654d;
+    padding: 23px;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+}
+.payment {
+    display: flex;
+    flex-direction: column;
+}
+.payment-btn {
+    border: none;
+    outline: none;
+    padding: 13px;
+    font-weight: bold;
+    background-color: #fa654d;
+    color: white;
+    transition: 0.1s;
+}
+.payment-btn:hover {
+    background-color: #be4938;
+}
+.credit {
+    border: 1px solid #3b9975;
+    max-width: 80%;
+    margin: 23px auto;
+    padding: 23px 400px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.credit>div>button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: #3b9975;
+    color: white;
+    font-weight: bold;
+    transition: 0.1s;
+}
+.credit>div>button:hover {
+    background-color: #25644c;
+}
+.credit-input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    transition: 0.1s;
+}
+.credit-input:focus {
+    background-color: #fff2d8;
+}
+.discount {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+}
+.discount>input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+.discount>div>button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: #3b9975;
+    transition: 0.1s;
+}
+.discount>div>button:hover {
+    background-color: #25644c;
+}
+@media screen and (max-width: 1350px) {
+    .credit {
+        padding: 23px 200px;
+    }
+}
+@media screen and (max-width: 863px) {
+    .credit {
+        padding: 23px 100px;
+    }
+}
+@media screen and (max-width: 634px) {
+    .credit {
+        padding: 23px 23px;
+    }
+    .payment-container {
+        grid-template-columns: 4fr 0.5fr 4fr;
+    }
+    .cart-container {
+        border-radius: 13px;
+        padding: 13px;
+    }
+}

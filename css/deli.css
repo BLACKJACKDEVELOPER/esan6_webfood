@@ -1,0 +1,17 @@
+body {
+    background-color: #f5f5f5 !important;
+}
+.order-container {
+    padding: 23px;
+    background-color: white;
+    max-width: 60%;
+    width: 100%;
+    border-radius: 23px;
+    margin: 23px auto;
+}
+.order {
+    background-color: #f5f5f5;
+    padding: 23px;
+    border-radius: 23px;
+    
+}
